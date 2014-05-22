@@ -1,0 +1,7 @@
+app/BookController.class
+app/Book.class
+app/BookRepository.class
+app/DummyBookRepository.class
+app/BookController$BookNotFoundException.class
+app/Author.class
+app/DummyBookRepository$1.class
