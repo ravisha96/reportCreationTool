@@ -1,0 +1,91 @@
+{
+	"tablet": {
+		"fields": ["tabletId", "MacAddress", "Vendor", "Status", "Description"]
+	},
+
+	"customertablet": {
+		"fields": ["customerTabletId", "LocationNumber", "TabletStatus", "LocationDescription", "TabletMacId", "TabletActivationDate", "LastPingStatus", "tabletId"]
+	},
+
+	"customerguestinstance": {
+		"fields": ["customerGuestInstanceId", "CustomerTabletId", "guestId", "SessionStartDate", "SessionEndDate", "DeviceMacId", "DeviceRSSI", "DeviceVendor"]
+	},
+
+	"customerguestinstanceresponse" : {
+		"fields" : ["customerGuestInstanceEventId", "customerguestinstanceId", "customerquestionId", "Response", "Comment", "OrderId"]
+	},
+
+	"refcustomertype": {
+		"fields": ["refCustomerTypeId", "Description"]
+	},
+
+	"refbrand": {
+		"fields": ["refBrandId", "Name", "Description"]
+	},
+
+	"customerconfiguration": {
+		"fields": ["CustomerId", "key", "value"]
+	},
+
+	"refdepartment": {
+		"fields": ["refDepartmentid", "Description"]
+	},
+
+	"customer": {
+		"fields": ["customerId", "customerName", "masterCustomerId", "brandTypeId", "StreetAddress1", "StreetAddress2", "StreetAddress3", "City", "State", "Country", "NumberofRooms", "customerTypeId"]
+	},
+
+	"guestmaster": {
+		"fields": ["GuestMasterId", "Name", "MobilePhone", "email", "password", "DevicemacId", "DeviceRSSI", "DeviceVendor"]
+	},
+
+	"refservice": {
+		"fields": ["refserviceId", "Description", "timeOffsetId", "baseTime", "departmentId", "HasDetails", "HasFeedback"]
+	},
+
+	"reftimeoffset": {
+		"fields": ["reftimeOffsetId", "Description", "Value"]
+	},
+
+	"refservicecategory": {
+		"fields": ["refserviceCategoryId", "Value"]
+	},
+
+	"serviceitem": {
+		"fields": ["ServiceItemID", "ServiceType", "ServiceCategory", "ServiceName", "ServiceDesc", "ServiceValue", "ServiceAvailability", "IsSpecial", "ServiceStartTime", "ServiceEndTime", "refServiceId", "refServiceCategoryId"]
+	},
+
+	"customermessage": {
+		"fields": ["CustomerMessageId", "CustomerId", "MessageId", "Description"]
+	},
+
+	"companyuserrole": {
+		"fields": ["companyUserRoleId", "companyid", "userId", "roleId"]
+	},
+
+	"refrole": {
+		"fields": ["refRoleid", "Description"]
+	},
+
+	"systemconfiguration": {
+		"fields": ["key", "value"]
+	},
+
+	"order": {
+		"fields": ["OrderID", "CustomerGuestInstanceId", "ServiceItemID", "OrderQty", "OrderValue", "OrderETA", "OrderStatus", "parentOrderId"]
+	},
+
+	"question": {
+		"fields": ["questionId", "Description", "Active", "DepartmentId"]
+	},
+
+	"user": {
+		"fields": ["userId", "userName", "password", "activeFlag", "departmentId"]
+	},
+
+	"message": {
+		"fields": ["messageId", "Description", "departmentId"]
+	}
+
+
+}
